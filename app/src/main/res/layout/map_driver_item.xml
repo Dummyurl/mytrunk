@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingTop="@dimen/dp_5">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/driver_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"
+        android:src="@drawable/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/driverName"
+        android:layout_alignTop="@+id/driver_img"
+        android:layout_toRightOf="@+id/driver_img"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:text="司机"
+        android:textColor="@color/title_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/carLength"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driverName"
+        android:layout_toRightOf="@+id/car_number"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:lines="1"
+        android:text="车长"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/car_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/driverName"
+        android:layout_below="@+id/driverName"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="黑EA6238" />
+
+
+    <TextView
+        android:id="@+id/targetLocationC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driverRoute"
+        android:layout_alignStart="@+id/car_number"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="目的地"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/driverRoute"
+        android:layout_below="@+id/car_number"
+        android:layout_alignStart="@+id/car_number"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="起始点"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/img_LocationC"
+        android:layout_below="@+id/targetLocationC"
+        android:layout_alignStart="@+id/driverRoute"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15"
+        android:src="@drawable/location"
+        />
+
+
+    <TextView
+        android:id="@+id/timeDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_15"
+        android:layout_alignTop="@+id/img_LocationC"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@+id/img_LocationC"
+        android:text="16分钟之前"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:id="@+id/img_callphone"
+        android:src="@drawable/phone"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignBottom="@+id/carLength"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="-1dp" />
+
+    <View
+        android:layout_below="@+id/img_LocationC"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="@dimen/dp_2"
+        android:background="@color/colorLine" />
+</RelativeLayout>

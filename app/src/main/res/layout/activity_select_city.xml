@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:background="@color/view_blue"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/img_found_return"
+            android:src="@drawable/btn_return"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_height="@dimen/dp_25" />
+
+
+        <EditText
+            android:id="@+id/city_name"
+            android:layout_marginLeft="@dimen/sp_15"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            />
+
+
+        <ImageView
+            android:id="@+id/img_found_city"
+            android:src="@drawable/btn_found"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginRight="@dimen/sp_15"
+            android:layout_height="@dimen/dp_25" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/littleGray" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_10"
+            android:text="选择省市"
+            android:textColor="@color/gray" />
+
+        <ImageView
+            android:id="@+id/slt_rtn_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/return_back"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/city_return" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray_bg"/>
+
+    <com.car.portal.util.AutoChangeLine
+        android:id="@+id/selectCity_hasSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/selectCity_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_register_bg"
+        android:paddingBottom="7dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="7dp"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/grid_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="@dimen/dp_10"
+        android:listSelector="@color/white"
+        android:numColumns="2"
+        android:padding="@dimen/dp_10"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dp_5" >
+    </GridView>
+
+</LinearLayout>

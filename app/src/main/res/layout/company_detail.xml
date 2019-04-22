@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.car.portal.view.BaseTitleView
+        android:id="@+id/com_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_body_padding" >
+
+        <LinearLayout style="@style/companyDetailLay" >
+
+            <TextView
+                style="@style/companyDetailTitle"
+                android:text="@string/title_companyName" />
+
+            <TextView
+                android:id="@+id/com_detail_name"
+                style="@style/companyDetailCont" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/companyDetailLay" >
+
+            <TextView
+                style="@style/companyDetailTitle"
+                android:text="@string/title_companyLegal" />
+
+            <TextView
+                android:id="@+id/com_detail_legal"
+                style="@style/companyDetailCont" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/companyDetailLay" >
+
+            <TextView
+                style="@style/companyDetailTitle"
+                android:text="@string/title_companyPhone" />
+
+            <TextView
+                android:id="@+id/com_detail_phone"
+                style="@style/companyDetailCont" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/companyDetailLay" >
+
+            <TextView
+                style="@style/companyDetailTitle"
+                android:text="@string/title_companyTel" />
+
+            <TextView
+                android:id="@+id/com_detail_tel"
+                style="@style/companyDetailCont" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/companyDetailLay" >
+
+            <TextView
+                style="@style/companyDetailTitle"
+                android:text="@string/title_companyFax" />
+
+            <TextView
+                android:id="@+id/com_detail_fax"
+                style="@style/companyDetailCont" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/companyDetailLay" >
+
+            <TextView
+                style="@style/companyDetailTitle"
+                android:text="@string/title_companyAddr" />
+
+            <TextView
+                android:id="@+id/com_detail_addr"
+                style="@style/companyDetailCont" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/companyDetailLay" >
+
+            <TextView
+                style="@style/companyDetailTitle"
+                android:text="@string/title_companyIntroduce" />
+
+            <TextView
+                android:id="@+id/com_detail_intro"
+                style="@style/companyDetailCont" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/companyDetailLay" >
+
+            <Button
+                android:id="@+id/com_detail_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:padding="10dp"
+                android:background="@drawable/btn_qtlogin_bg"
+                android:textColor="@color/title_black"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/return_back" />
+
+            <Button
+                android:id="@+id/com_detail_goods"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:background="@drawable/btn_register_bg"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                style="?android:attr/buttonBarButtonStyle" 
+                android:text="@string/goods" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

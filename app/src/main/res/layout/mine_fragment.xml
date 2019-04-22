@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.car.portal.fragment.MineFragment">
+    <RelativeLayout
+        android:id="@+id/re_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp" />
+
+        <LinearLayout
+            android:id="@+id/linear_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/viewpager"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_below="@+id/re_viewpager">
+        <LinearLayout
+            android:id="@+id/line_link"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mine_selector"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_15">
+
+            <ImageView
+                android:id="@+id/img_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/link" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_one"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_3"
+                android:text="@string/order"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_map"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mine_selector"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_20">
+            <ImageView
+                android:id="@+id/img_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_one"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_3"
+                android:text="线上司机"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_one"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_15">
+
+        <LinearLayout
+            android:id="@+id/line_calculations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mine_selector"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_15">
+
+            <ImageView
+                android:id="@+id/img_calculations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calculations" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_one"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_3"
+                android:text="结算确认"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_agreement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mine_selector"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_20">
+            <ImageView
+                android:id="@+id/img_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/agreement" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_one"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_3"
+                android:text="合同列表"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

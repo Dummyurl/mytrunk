@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/img_identify_return"
+            android:src="@drawable/btn_return"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_height="@dimen/dp_25" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:textColor="@color/white"
+            android:text="@string/data_authentication"/>
+
+        <ImageView
+            android:id="@+id/img_check_Join"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/ic_message_24" />
+        <TextView
+            android:text="(2)"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="1dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_body_padding" >
+
+            <TextView
+                android:id="@+id/auth_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="@string/upload_file"
+                android:textColor="@color/red"
+                android:textSize="25sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="@string/upload_file"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_check"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/driver_upload_text"
+                android:text="@string/select_identify" />
+
+            <ImageView
+                android:id="@+id/driver_ident_img"
+                style="@style/driver_uploadImg"
+                android:tag="ident"
+                android:contentDescription="@string/apk_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/driver_upload_text"
+                android:text="@string/select_personal" />
+
+            <ImageView
+                android:id="@+id/driver_person_img"
+                style="@style/driver_uploadImg"
+                android:tag="person"
+                android:contentDescription="@string/apk_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/driver_upload_text"
+                android:tag="person"
+                android:text="@string/select_driving" />
+
+            <ImageView
+                android:id="@+id/driver_driving_img"
+                style="@style/driver_uploadImg"
+                android:contentDescription="@string/apk_name"
+                android:tag="driving"
+                android:src="@drawable/ac0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/driver_upload_text"
+                android:text="@string/select_driver" />
+
+            <ImageView
+                android:id="@+id/driver_drive_img"
+                style="@style/driver_uploadImg"
+                android:tag="driver"
+                android:contentDescription="@string/apk_name" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/driver_ident_comfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirm_upload"
+            android:textColor="@color/white"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/blue_button"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <Button
+            android:id="@+id/driver_ident_found"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="加入已有公司"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/blue_button"
+            style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>

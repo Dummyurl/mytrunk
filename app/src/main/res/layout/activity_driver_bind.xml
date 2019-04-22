@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/mytooler"></include>
+
+
+    <RelativeLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:id="@+id/addContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="horizontal">
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bind_userlay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/addContent"
+        android:layout_marginTop="@dimen/dp_15"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15">
+
+        <EditText
+            android:id="@+id/bind_user"
+            style="@style/loginEditStyle"
+            android:hint="@string/tip_user"
+            android:inputType="text"
+            android:maxLength="16">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            style="@style/loginEditText"
+            android:text="@string/title_username" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bind_passlay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/bind_userlay"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15">
+
+        <EditText
+            android:id="@+id/bind_pass"
+            style="@style/loginEditStyle"
+            android:hint="@string/tip_pass"
+            android:inputType="textPassword"
+            android:maxLength="15" />
+
+        <TextView
+            style="@style/loginEditText"
+            android:text="@string/title_password" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bind_submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/bind_passlay"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/blue_button"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bind_forgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bind_submit"
+        android:padding="@dimen/dp_15"
+        android:text="@string/login_forgot_pass"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/dp_5"/>
+
+    <TextView
+        android:id="@+id/bind_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bind_submit"
+        android:layout_alignRight="@+id/bind_submit"
+        android:layout_below="@+id/bind_submit"
+        android:text="@string/registerDirect"
+        android:padding="@dimen/dp_15"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/dp_5"/>
+
+    </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

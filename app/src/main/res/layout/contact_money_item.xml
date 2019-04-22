@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_years"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:visibility="visible" >
+
+    <TextView
+        android:id="@+id/txt_year"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/text_cell"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16" />
+
+<!--     <TextView
+        android:id="@+id/txt_month"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16" />
+ -->
+    <TextView
+        android:id="@+id/txt_singular"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="@dimen/dp_3"
+        android:textColor="@color/black"
+        android:background="@drawable/text_cell"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/txt_commission"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:padding="@dimen/dp_3"
+        android:textColor="@color/black"
+        android:background="@drawable/text_cell"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/txt_achievement"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:padding="@dimen/dp_3"
+        android:textColor="@color/black"
+        android:background="@drawable/text_cell"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

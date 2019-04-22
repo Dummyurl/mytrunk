@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.car.portal.view.BaseTitleView
+        android:id="@+id/reset_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_body_padding"
+        android:paddingRight="@dimen/activity_body_padding"
+        android:paddingTop="@dimen/activity_body_padding" >
+
+        <TextView
+            style="@style/loginEditText"
+            android:text="@string/title_phone" />
+
+        <TextView
+            android:id="@+id/reset_user"
+            style="@style/loginEditStyle"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:hint="@string/tip_phone"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_body_padding"
+        android:paddingRight="@dimen/activity_body_padding" >
+
+        <TextView
+            style="@style/loginEditText"
+            android:text="@string/title_newPass" />
+
+        <EditText
+            android:id="@+id/reset_pass"
+            style="@style/loginEditStyle"
+            android:hint="@string/tip_newPass"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_body_padding"
+        android:paddingRight="@dimen/activity_body_padding" >
+
+        <TextView
+            style="@style/loginEditText"
+            android:text="@string/title_conf_pass" />
+
+        <EditText
+            android:id="@+id/reset_confirm"
+            style="@style/loginEditStyle"
+            android:hint="@string/tip_conf_pass"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/reset_sub"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/activity_body_padding"
+        android:layout_marginRight="@dimen/activity_body_padding"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_button"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

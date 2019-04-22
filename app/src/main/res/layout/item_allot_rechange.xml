@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:id="@+id/allot_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_5"
+        >
+<TextView
+    android:id="@+id/allot_number"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:text="1"
+    android:gravity="center"
+    android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/allot_money"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="88.00"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/allot_checkout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="已提现"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+    <TextView
+        android:id="@+id/allot_time"
+        android:layout_width="0dp"
+        android:layout_weight="1.6"
+        android:gravity="center"
+        android:text="2019年1月23日"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray_bg"
+        />
+</LinearLayout>

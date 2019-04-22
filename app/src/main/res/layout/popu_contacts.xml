@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/line_back"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/popu_style">
+
+        <TextView
+            android:id="@+id/txt_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系客户"
+            android:layout_margin="@dimen/dp_5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"/>
+
+        <ListView
+            android:id="@+id/list_contacts"
+            android:layout_below="@+id/txt_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:dividerHeight="0dp"
+            android:divider="@color/white"
+            android:scrollbars="none"></ListView>
+
+       <LinearLayout
+           android:id="@+id/line_call"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/dp_10"
+           android:background="@drawable/button_style"
+           android:gravity="center"
+           android:layout_marginTop="@dimen/dp_20"
+           android:layout_below="@+id/list_contacts"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="22dp"
+               android:layout_height="22dp"
+               android:src="@drawable/contacts_phone"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="拨号"
+               android:layout_gravity="center_vertical"
+               android:textSize="@dimen/sp_16"
+               android:textColor="@color/white"
+               android:layout_marginLeft="@dimen/dp_5"/>
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:layout_below="@+id/line_call"
+            android:background="@drawable/edit_style"
+            android:text="只更新联系日期（已经线下联系过）"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/unchecked"
+            android:layout_below="@+id/txt_data"
+            android:layout_marginTop="@dimen/dp_20"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择是否录音"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/img_check"
+            android:layout_toRightOf="@+id/img_check"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

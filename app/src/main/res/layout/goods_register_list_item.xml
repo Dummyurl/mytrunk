@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contacts"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_2"
+        android:layout_marginLeft="@dimen/dp_8"/>
+
+    <TextView
+        android:id="@+id/txt_new_goods_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_red_circular"
+        android:layout_alignTop="@+id/img_photo"
+        android:layout_alignRight="@+id/img_photo"
+        android:layout_marginTop="@dimen/dp_3"
+        android:text="12"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/img_photo"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_toLeftOf="@+id/img_call">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名字"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textSize="@dimen/sp_14"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_call"
+        android:layout_width="30dp"
+        android:layout_height="@dimen/dp_30"
+        android:src="@drawable/phone"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"/>
+</RelativeLayout>

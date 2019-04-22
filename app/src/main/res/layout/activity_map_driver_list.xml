@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/focus_com_title"
+        android:background="@color/view_blue"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/img_found_return"
+            android:src="@drawable/btn_return"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_height="@dimen/dp_25" />
+
+
+        <TextView
+            android:id="@+id/tv_city_name"
+            android:textColor="@color/white"
+            android:text="线上司机列表"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text_findaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_10"
+            android:text="位置:湛江"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/focus_city_title"
+        android:background="@color/blue1"
+        android:padding="@dimen/dp_3"
+        android:text="暂未查询到相关数据！"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/line_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/light_gray_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/driver_slt_length"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/driver_select_edit"
+            android:gravity="center"
+            android:hint="@string/tip_length"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/sp_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/split"
+            android:textColor="@color/darkgray"/>
+
+        <EditText
+            android:id="@+id/driver_slt_length2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/driver_select_edit"
+            android:gravity="center"
+            android:hint="@string/tip_area"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/sp_14"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="25dp"
+            android:background="@color/darkgray"/>
+
+        <TextView
+            android:id="@+id/driver_target"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/driver_select_edit"
+            android:gravity="center"
+            android:hint="@string/tip_target"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="25dp"
+            android:background="@color/darkgray"/>
+
+        <RelativeLayout
+            android:id="@+id/driver_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/txt_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/tip_car_type"
+                android:textColor="@color/darkgray"/>
+
+            <ImageView
+                android:id="@+id/img_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arrow_up"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/driver_list_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="1px"
+        android:listSelector="@color/light_gray"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:scrollbars="none"/>
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.car.portal.adapter.AgreementListAdapter">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:background="@drawable/popu_blue_style"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/img_lianxiren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@drawable/agreement_note"/>
+
+        <LinearLayout
+            android:id="@+id/line_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_lianxiren"
+            android:layout_alignTop="@+id/img_lianxiren"
+            android:layout_alignBottom="@+id/img_lianxiren"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_8">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_lianxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="司机："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_16"/>
+
+                <TextView
+                    android:id="@+id/txt_contacts_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="？？"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_16"
+                    android:text="货主："/>
+
+                <TextView
+                    android:id="@+id/txt_boss_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"
+                    android:text="？？"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/img_lianxiren"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/light_gray"/>
+
+        <ImageView
+            android:id="@+id/img_isinvaild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/already_void"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_10"/>
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/img_lianxiren"-->
+            <!--android:layout_marginTop="@dimen/dp_20"-->
+            <!--android:text="终 "-->
+            <!--android:textColor="@color/red"-->
+            <!--android:textSize="@dimen/sp_20"-->
+            <!--android:layout_marginLeft="@dimen/dp_5"-->
+            <!--android:textStyle="bold"/>-->
+
+        <ImageView
+            android:id="@+id/txt_siji"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/location_big"
+            android:layout_below="@+id/img_lianxiren"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_3"/>
+
+        <TextView
+            android:id="@+id/txt_target_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_siji"
+            android:layout_toRightOf="@+id/txt_siji"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="？"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_riqi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/img_lianxiren"-->
+            <!--android:layout_marginLeft="@dimen/dp_150"-->
+            <!--android:layout_marginTop="@dimen/dp_20"-->
+            <!--android:text="合同日期："-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/sp_16"-->
+            <!--android:textStyle="bold"/>-->
+
+        <ImageView
+            android:id="@+id/img_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/card"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@+id/txt_siji"/>
+
+        <TextView
+            android:id="@+id/txt_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="？"
+            android:layout_alignBottom="@+id/img_card"
+            android:layout_alignLeft="@+id/txt_target_point"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"/>
+
+        <ImageView
+            android:id="@+id/img_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clock_date"
+            android:layout_below="@+id/img_card"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_8"/>
+
+        <TextView
+            android:id="@+id/txt_agreement_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="？"
+            android:layout_alignBottom="@+id/img_date"
+            android:layout_alignLeft="@+id/txt_card"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"/>
+    </RelativeLayout>
+</RelativeLayout>

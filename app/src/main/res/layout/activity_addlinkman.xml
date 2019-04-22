@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddlinkmanActivity">
+
+    <include layout="@layout/mytooler"></include>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/line_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_login">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/darkgray"
+            android:text="联系人名称:"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/sp_16"/>
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/line_boss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_login">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/darkgray"
+                android:text="老板名称:"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/sp_16"/>
+
+            <EditText
+                android:id="@+id/edit_boss"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/line_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_login">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/darkgray"
+                android:text="联系人号码:"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/sp_16"/>
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_15"
+            android:background="@drawable/blue_button"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:padding="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_30"/>
+    </LinearLayout>
+
+
+</LinearLayout>

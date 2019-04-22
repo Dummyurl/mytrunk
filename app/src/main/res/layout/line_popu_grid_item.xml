@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:id="@+id/line_grid_item"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rela_line">
+        <TextView
+            android:id="@+id/txt_line"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:text="2222"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/popu_style"/>
+    </RelativeLayout>
+</LinearLayout>

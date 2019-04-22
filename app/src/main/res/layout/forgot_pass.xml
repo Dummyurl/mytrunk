@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/mytooler"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/activity_body_padding"
+        android:layout_marginRight="@dimen/activity_body_padding"
+        android:layout_marginTop="@dimen/activity_body_padding"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/forgot_user"
+            style="@style/loginEditStyle"
+            android:hint="@string/tip_phone" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            style="@style/loginEditText"
+            android:text="@string/title_phone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/activity_body_padding"
+        android:layout_marginRight="@dimen/activity_body_padding"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/loginEditText"
+            android:text="@string/title_idcard" />
+
+        <EditText
+            android:id="@+id/forgot_idcard"
+            style="@style/loginEditStyle"
+            android:hint="@string/tip_idcard"
+            android:inputType="text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/activity_body_padding"
+        android:layout_marginRight="@dimen/activity_body_padding"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/loginEditText"
+            android:text="@string/title_cname" />
+
+        <EditText
+            android:id="@+id/forgot_name"
+            style="@style/loginEditStyle"
+            android:hint="@string/tip_cname"
+            android:inputType="text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/activity_body_padding"
+        android:layout_marginRight="@dimen/activity_body_padding"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/loginEditText"
+            android:text="@string/title_userType" />
+
+        <Spinner
+            android:id="@+id/forgot_type"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/userType_s" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/activity_body_padding"
+        android:layout_marginRight="@dimen/activity_body_padding"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/loginEditText"
+            android:text="@string/title_checkNumber" />
+
+        <EditText
+            android:id="@+id/forgot_mess"
+            style="@style/loginEditStyle"
+            android:hint="@string/tip_checkNum"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/forgot_sendMess"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_register_bg"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/getCheckNumber"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/forgot_next"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/activity_body_padding"
+        android:layout_marginRight="@dimen/activity_body_padding"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_button"
+        android:text="@string/nextStep"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

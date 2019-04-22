@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="project_name">portalWeb/app</string>
+    <string name="baidu_url">http://api.map.baidu.com/geocoder/v2/</string>
+    
+    <string name="url_login">user_appLogin.action</string>
+    <string name="url_getCheckNumber">../image/ImageServlet.servlet</string>
+    <string name="url_regCheckPhone">user_appRegCheckPhone.action</string>
+    <string name="url_regCheckMessage">user_appRegCheckMess.action</string>
+    <string name="url_register">user_appRegister.action</string>
+    <string name="url_getPhoneCode">../phoneCodeAction.do</string>
+    <!--忘记密码时获取-->
+    <string name="url_getPhoneCodeForgot">../phoneCodeForgotAction.do</string>
+    <string name="url_cleanCode">../clearPhoneCode.do</string>
+    <string name="url_location">user_appLocation.action</string>
+    <string name="url_checkForget">user_appCheckForgot.action</string>
+    <string name="url_resetPass">user_resetPass.action</string>
+    <string name="url_getGoodsInfo">goods_getGoodsInfo.action</string>
+    <string name="url_getMessage">msg_getMessage.action</string>
+    <string name="url_getDFocusCity">driver_getFocusCity.action</string>
+    <string name="url_saveDFocusCity">driver_saveFocusCity.action</string>
+    <string name="url_getDFocusCom">driver_getFocusCom.action</string>
+    <!--保存关注公司-->
+    <string name="url_saveDfocusCom">driver_saveFocusCom.action</string>
+    <!--上传用户资料图片-->
+    <string name="url_saveDriverImg">com_uploadImgs.action</string>
+    <!--个人头像接口-->
+    <string name="url_savePersonImg">com_uploadPersonImage.action</string>
+    <string name="url_getDriverInfo">com_getCompanyInfo.action</string>
+    <string name="url_changePass">user_changePass.action</string>
+    <string name="url_getDetail">user_getUserDetail.action</string>
+    <string name="url_update">user_updateInfo.action</string>
+    <!--修改手机号-->
+    <string name="url_Revisephone">pay_editPhone.action</string>
+
+    <!--使用验证码修改密码-->
+    <string name="url_editPasswordByPhoneCode">pay_editPasswordByPhoneCode.action</string>
+    <string name="url_logout">user_logout.action</string>
+    <string name="url_departPlan">driver_departPlan.action</string>
+    <string name="url_searchCompany">driver_searchCompany.action</string>
+    <string name="url_findProvince">city_getProvince.action</string>
+    <string name="url_findByProvince">city_getCitys.action</string>
+    <string name="url_findCity">city_findCity.action</string>
+    <string name="url_findByLevel">city_searchByLevel.action</string>
+    <string name="url_downCity">city_getByPager.action</string>
+    <string name="url_getGoodTypes">goods_getGoodTypes.action</string>
+    <!--客户信息-->
+    <string name="url_getBoss">com_getBoss.action</string>
+    <string name="url_getcompany">com_getChildCom.action</string>
+    <string name="url_getcontacts">../myjson/boss_phoneUI.action</string>
+    <string name="url_getgoods_city">../myjson/jsonTodayEntructingAction!doGoodsForOwer_ForApp.action</string>
+    <string name="url_getgoods_one_address">com_getGoodsByRoute.action</string>
+    <string name="url_save_good_error">../myjson/jsonTodayEntructingAction!failGood.action</string>
+    <string name="url_save_good_end">../myjson/jsonTodayEntructingAction!endGood.action</string>
+    <!--查询公司已经配对的订单-->
+    <string name="url_panerShipList">../myjson/jsonTodayEntructingAction!showParnership.action</string>
+    <string name="url_countConfirm">../myjson/jsonSearchAction!doNotCountOfContract.action</string>
+    <string name="url_countContract">../myjson/jsonSearchAction!endCount.action</string>
+    <string name="url_endGoods">../myjson/jsonSearchAction!endCount.action</string>
+    <string name="url_call">../customer/doublecall.action</string>
+    <!--本公司所有用户-->
+    <string name="url_company_user">com_getCompanyUser.action</string>
+    <string name="url_getContractList">com_getContractList.action</string>
+    <string name="url_getDriverByRoute">com_getRouteDriver.action</string>
+    <string name="url_expiredDriver">com_failCar.do</string>
+    <string name="url_getArriveDriver">com_getArrivedCars.action</string><!-- CarArriveDTO -->
+    <string name="url_searchDriver">com_searchDriver.action</string>
+    <string name="url_getParkDriver">com_getParkCars.action</string>
+    <string name="url_getDeletedDriver">com_getDeleteDriver.action</string>
+    <string name="url_getPauseDriver">com_getPauseDriver.action</string>
+    <string name="url_getNewDriver">com_getNewDriver.action</string>
+    <string name="url_unPauseDriver">../myjson/driver_removePause.action</string>
+    <string name="url_recoverDelDriver">../myjson/driver_updateDelflag.action</string>
+    <string name="url_removeDelDriver">../myjson/driver_delDriver.action</string>
+    <string name="url_removeNewDriver">../customer/deleteDriverTemp.action</string>
+    <string name="url_uploadPhone">com_uploadPhone.action</string>
+    <string name="url_upCallInfo">com_uploadCallInfo.action</string>
+    <string name="url_uploadCallList">com_uploadCallList.action</string>
+    <string name="url_getcity_by_date">../myjson/jsonTodayEntructingAction!doGoodsForOwer_day.action</string>
+    <string name="url_inspect_order">../myjson/jsonActiveRecordAction!findGoodRecordForBoss.action</string>
+    <!--由客户列表中进行货物登记-->
+    <string name="url_add_order">../myjson/jsonActiveRecordAction!saveGoodRecord.action</string>
+    <!--由客户列表中进行货物登记并共享-->
+    <string name="url_add_orderShare">../myjson/jsonActiveRecordAction!saveGoodRecordAndShare.action</string>
+
+    <string name="url_updata_arrived_driver">../myjson/jsonDriverAction!carArriveAndShare.action</string>
+    <string name="url_car_goods_link">../crmParnerShip.do</string>
+    <string name="url_linl_confirm">../crmConfirmShip.action</string>
+    <string name="url_linl_cencel">../crmCancelShip.action</string>
+    <string name="url_agreement_item_info">../myjson/jsonSearchAction!doContractById.action</string>
+    <string name="url_downLoadBaseCity">city_downloadCityInfo.action</string>
+    <string name="url_getChildCity">city_getChildCity.action</string>
+    <string name="url_checkVersion">user_getCurrentVersion.action</string>
+    <!--获取地图定点，显示屏范围内的司机-->
+    <string name="url_getDriverForMap">com_getDriverForMap.action</string>
+    <string name="url_getcartype">../findBodyType.action</string>
+    <string name="url_getMycompany">com_getMyCom.action</string>
+    <string name="url_getCarType">driver_getCarTypes.action</string>
+    <string name="url_adddriver">../myjson/driver_create.do</string>
+    <string name="url_isphone_iexit">../myjson/driver_findLikeTel.action</string>
+    <string name="url_phone_home">../myjson/jsonMobileAction!inputMobileArea.action</string>
+    <!--查找订单统计数据-->
+    <string name="url_orders">../myjson/jsonUserAction!findUserContractCount.action</string>
+    <!--提成金额确认列表-->
+    <string name="url_comments">../myjson/jsonUserAction!getUserContractCountForConfirm2.action</string>
+    <string name="url_comments_end">../myjson/jsonContractAction!cancelContract.action</string>
+    <string name="url_weixinLogin">user_weixinLogin.action</string>
+    <string name="url_assistAuthor">com_temporaryAuth.action</string>
+    <string name="url_qqLogin">user_qqLogin.action</string>
+    <string name="url_bindWxUser">user_bindWXUser.action</string>
+    <string name="url_bindQQUser">user_bindQQUser.action</string>
+    <!--查询业绩金额数据-->
+    <string name="url_findallmoney">../myjson/jsonUserAction!accountContract_all.action</string>
+    <!--提成比例-->
+    <string name="url_findmoneyrate">../myjson/jsonUserAction!findUserRate.action</string>
+
+    <string name="url_findcontactmoney">../myjson/jsonUserAction!accountContract.action</string>
+    <string name="url_netPhoneInfo">../wx_company_loadPhonecallCount.action</string>
+    <string name="url_findCalls_byMonths">../myjson/jsonUserAction!connTrace_driver.action</string>
+    <string name="url_findCalls_byYears">../myjson/jsonUserAction!connectionCount.action</string>
+    <string name="url_getNetWork">com_getNetworkPhone.action</string>
+    <string name="url_getDriver">../public/driverById.do</string>
+    <!--  发货接口 -->
+    <string name="url_sendGoodsOrder">../myjson/jsonActiveRecordAction!saveGoodRecordForAPP.action</string>
+    <!--提前常用发货记录-->
+    <string name="url_findMyGoodsNormal">com_findMyGoodsNormal.action</string>
+    <!--删除已经存在的常用货物记录，常用货物是以个人为单位的，公司内部不共享-->
+    <string name="url_deleteGoodsNormal">com_deleteGoodsNormal.action</string>
+    <!--由常用货物记录发布货物信息，一键发送，只允许一次发一条货物信息-->
+    <string name="url_releaseGoodsOneKey">com_releaseGoodsInfomationByGoodsNormal.action</string>
+    <string name="url_findContactPhone">../myjson/jsonActiveRecordAction!findContactPhone.action</string>
+    <string name="url_getAuthentication">com_imageAuthState.action</string>
+    <string name="url_checkUserAuthentication">com_checkAuthState.action</string>
+    <string name="url_saveCompanyInfo">com_updateCompany.action</string>
+    <string name="url_uploadLogo">com_uploadImgsLogo.action</string>
+    <!--微信支付-->
+    <string name="url_prePayUnionWx">pay_prepayCompanyGenerateWX.action</string>
+    <!-- 通话记录 -->
+    <string name="url_offlineCall">../customer/offlineCall.action</string>
+    <!--推荐用户-->
+    <string name="url_saleRechange">com_findSalesResultForMe.action</string>
+    <!--推荐用户其充值金额合计-->
+    <string name="url_saleRechangeAmount">com_findSalesResultForMeAmount.action</string>
+    <!--推荐用户提成了列表接口-->
+    <string name="url_allotrechange">com_findAllotRechange.action</string>
+    <!--推荐用户提成金额合计-->
+    <string name="url_allotrechangeAmount">com_findAllotRechangeAmount.action</string>
+    <!--通过电话号返回公司资料对象Company,duration=>uid,alias=>phone，参数为phone-->
+    <string name="url_findCompanyByPhone">com_findCompanyByPhone.action</string>
+
+    <!--查找申请加入我司的申请  参数：toUid-->
+    <string name="url_findApplyJoinCompany">com_findApplyJoinCompany.action</string>
+    <!--申请加入公司  -参数：companyId,toUid,phone-->
+    <string name="url_applyJoinCompany">com_applyJoinCompany.action</string>
+    <!--处理我司信息  -参数：id,flag,1:同意，0，拒绝-->
+    <string name="url_processApplyJoinCompany">com_processApplyJoinCompany.action</string>
+    <string name="findRechangeForUser">com_findRechangeForUser.action</string>
+    <string name="findRechangeOfTypes">com_findRechangeOfTypes.do</string>
+    <string name="findAllGoods">com_findAllGoods.action</string>
+    <!--获取用户的永久二维码-->
+    <string name="findMyQrLimitCode">com_findMyQrLimitCode.action</string>
+    <string name="findFocusForGoods">com_findFocusForGoods.action</string>
+    <string name="prepayCompanyGenerateWX">pay_prepayCompanyGenerateWX.action</string>
+    <string name="findPayOrderResultCompany">pay_findPayOrderResultCompany.action</string>
+    <string name="url_findSetMeal">com_findSetMeal.action?forBoss=1</string>
+
+    <!--重置司货查看货物计数 参数：goodsId-->
+    <string name="url_resetViewCount">msg_resetViewCount.action</string>
+
+    <!--绑定推荐人手机号-->
+    <string name="url_bindbyphone">pay_updateInvtier.action </string>
+    <!--获取与客户的通话记录，bossId，currPage当前页，pageRows每页多少行-->
+    <string name="url_showBossCall">pay_showBossCall.action </string>
+    <!--获取与司机的通话记录，driverId，currPage当前页，pageRows每页多少行-->
+    <string name="url_showDriverCall">pay_showDriverCall.action </string>
+</resources>

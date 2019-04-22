@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuerybynameActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_query_byname"
+        app:queryHint="请输入联系人名称"
+        android:layout_marginHorizontal="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.SearchView>
+
+      <FrameLayout
+          android:id="@+id/frame_query"
+          android:layout_below="@+id/search_query_byname"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+      </FrameLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

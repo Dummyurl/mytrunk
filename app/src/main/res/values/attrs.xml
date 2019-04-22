@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <declare-styleable name="tabAttr">
+        <attr name="srcImage" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="editImage">
+        <attr name="left_bound" format="integer" />
+        <attr name="right_bound" format="integer" />
+    </declare-styleable>
+    
+    <attr name="datePickerStyle" format="reference" />
+
+    <declare-styleable name="DatePicker">
+
+        <!--
+             {@deprecated Use minDate instead.}
+        -->
+        <attr name="dp_startYear" format="integer" />
+        <!--
+             {@deprecated Use maxDate instead.}
+        -->
+        <attr name="dp_endYear" format="integer" />
+        <attr name="dp_spinnersShown" format="boolean" />
+        <attr name="dp_calendarViewShown" format="boolean" />
+        <attr name="dp_minDate" format="string" />
+        <attr name="dp_maxDate" format="string" />
+        <!-- @hide The layout of the date picker. -->
+        <attr name="dp_internalLayout" format="reference" />
+    </declare-styleable>
+
+    <!-- The CalendarView style. -->
+    <attr name="calendarViewStyle" format="reference" />
+
+    <declare-styleable name="CalendarView">
+
+        <attr name="cv_firstDayOfWeek" format="integer" />
+        <attr name="cv_showWeekNumber" format="boolean" />
+        <attr name="cv_minDate" format="string" />
+        <attr name="cv_maxDate" format="string" />
+        <attr name="cv_shownWeekCount" format="integer" />
+        <attr name="cv_selectedWeekBackgroundColor" format="color|reference" />
+        <attr name="cv_focusedMonthDateColor" format="color|reference" />
+        <attr name="cv_unfocusedMonthDateColor" format="color|reference" />
+        <attr name="cv_weekNumberColor" format="color|reference" />
+        <attr name="cv_weekSeparatorLineColor" format="color|reference" />
+        <attr name="cv_selectedDateVerticalBar" format="reference" />
+        <attr name="cv_weekDayTextAppearance" format="reference" />
+        <attr name="cv_dateTextAppearance" format="reference" />
+        <attr name="cv_dividerHorizontal" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TextAppearanceCompatStyleable">
+        <attr name="android:textSize" />
+    </declare-styleable>
+
+    <attr name="numberPickerStyle" format="reference" />
+
+    <declare-styleable name="NumberPicker">
+
+        <!-- @hide Color for the solid color background if such for optimized rendering. -->
+        <attr name="solidColor" format="color|reference" />
+        <!-- @hide The divider for making the selection area. -->
+        <attr name="selectionDivider" format="reference" />
+        <!-- @hide The height of the selection divider. -->
+        <attr name="selectionDividerHeight" format="dimension" />
+        <!-- @hide The distance between the two selection dividers. -->
+        <attr name="selectionDividersDistance" format="dimension" />
+        <!-- @hide The min height of the NumberPicker. -->
+        <attr name="internalMinHeight" format="dimension" />
+        <!-- @hide The max height of the NumberPicker. -->
+        <attr name="internalMaxHeight" format="dimension" />
+        <!-- @hide The min width of the NumberPicker. -->
+        <attr name="internalMinWidth" format="dimension" />
+        <!-- @hide The max width of the NumberPicker. -->
+        <attr name="internalMaxWidth" format="dimension" />
+        <!-- @hide The layout of the number picker. -->
+        <attr name="internalLayout" format="reference" />
+        <!-- @hide The drawable for pressed virtual (increment/decrement) buttons. -->
+        <attr name="virtualButtonPressedDrawable" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="driverNav">
+        <attr name="imgRes" format="reference"/>
+        <attr name="contentText" format="string"/>
+    </declare-styleable>
+    
+</resources>

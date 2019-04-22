@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">货满车货主</string>
+    <string name="apk_name">货满车货主</string>
+    <string name="icon_name">图标名称</string>
+    <string name="app_service_name">货满车后台服务</string>
+    <string name="tab_home">我的货</string>
+    <string name="tab_driver">车库</string>
+    <string name="tab_delivery">发货</string>
+    <string name="tab_info">更多</string>
+    <string name="tab_person">我</string>
+    <string name="login">登录</string>
+    <string name="bindLogin">绑定现有用户</string>
+    <string name="logout">退出登录</string>
+    <string name="login_forgot_pass">忘记密码&#063;</string>
+    <string name="getCheckNumber">获取验证码</string>
+    <string name="reg_hasAccount">已有账号，返回登录</string>
+    <string name="reg_1">货满车”平台服务使用协议</string>
+    <string name="reg_2">欢迎您阅读“货满车”（以下简称本平台）服务使用协议（以下简称“本协议”）。本协议阐述之条款适用于您使用本平台的所有服务。</string>
+    <string name="reg_3">一．特别提示:“货满车”按照本协议的规定提供基于互联网的相关服务（以下称“网络服务”）。为获得网络服务，服务使用人（以下称“用户”）应当同意本协议的全部条款并按照页面上的提示完成全部的注册程序。用户在进行注册程序过程中点击“同意”按钮即表示用户完全接受本协议项下的全部条款。</string>
+    <string name="reg_4">本平台可根据实际情况全权决定修订本协议。如本协议有变更，将在网站上刊载公告，通知予您。经修订的条款一经在本平台公布，立即生效。您继续登录或使用本平台表示您接受修订的“条款”。</string>
+    <string name="reg_5">二．服务内容:“货满车”平台网络服务的具体内容由”货满车”平台根据实际情况提供。“货满车”平台保留变更、中断或终止部分或全部网络服务的权利。</string>
+    <string name="reg_6">货满车”平台在提供网络服务时，可能会对部分使用网络服务（例如可以查询一些重要信息、增值服务等）的用户收取一定的费用。在此情况下，“货满车”平台会在相关页面上做明确的提示。如用户拒绝支付该费用，则不能使用相关的网络服务。</string>
+    <string name="reg_7">用户理解，“货满车”平台仅提供相关的网络服务，除此之外与相关网络服务有关的设备（如电脑、调制解调器及其他与接入互联网有关的装置）及所需的费用（如为接入互联网而支付的电话费及上网费）均应由用户自行负担。</string>
+    <string name="reg_8">三．内容所有权:“货满车”平台提供的网络服务内容可能包括：货源信息、车源信息、汽配经销商信息、维修站信息、行业资讯、物流企业介绍等。所有这些内容受版权、商标和其他财产所有权法律的保护。</string>
+    <string name="reg_9">用户只有在获得“货满车”平台或其他相关权利人的授权之后才能使用这些内容，而不能擅自复制、再造这些内容、或创造与内容有关的派生产品。</string>
+    <string name="reg_10">四．使用规则:用户在申请使用“货满车”平台网络服务时，必须向“货满车”平台提供真实的个人资料，如个人资料有任何变动，必须及时更新。</string>
+    <string name="reg_11">用户注册成功后，“货满车”平台将给予每个用户一个用户帐号及相应的密码，该用户帐号和密码由用户负责保管；用户应当对以其用户帐号进行的所有活动和事件负法律责任。</string>
+    <string name="reg_12">用户必须同意接受“货满车”平台通过电子邮件或其他方式向用户发送的商品促销或其他相关商业信息。</string>
+    <string name="reg_13">用户必须同意接受“货满车”平台扫描用户计算机内的某些特定信息，使“货满车”平台知悉客户端软件是否遭受到被篡改、攻击或者其他任何可能导致用户使用“货满车”平台发生错误的行为。</string>
+    <string name="reg_14">用户在使用“货满车”平台网络服务过程中，必须遵循以下原则：</string>
+    <string name="reg_15">(a) 遵守中国有关的法律和法规；</string>
+    <string name="reg_16">(b) 不得为任何非法目的而使用网络服务；</string>
+    <string name="reg_17">(c) 遵守所有与网络服务有关的网络协议、规定和程序；</string>
+    <string name="reg_18">(d) 不得利用“货满车”平台网络服务进行任何可能对互联网的正常运转造成不利影响的行为；</string>
+    <string name="reg_19">(e)不得利用“货满车”平台网络服务传输任何骚扰性的、中伤他人的、辱骂性的、恐吓性的、庸俗淫秽的或其他任何非法的信息资料；</string>
+    <string name="reg_20">(f) 不得利用“货满车”平台网络服务进行任何不利于“货满车”平台的行为。</string>
+    <string name="reg_21">五．服务变更、中断或终止:如因系统维护或升级的需要而需暂停网络服务，“货满车”平台将尽可能事先进行通告。</string>
+    <string name="reg_22">如发生下列任何一种情形，“货满车”平台有权随时中断或终止向用户提供本协议项下的网络服务而无需通知用户：</string>
+    <string name="reg_23">(a) 用户提供的个人资料不真实；</string>
+    <string name="reg_24">(b) 用户违反本协议中规定的使用规则。</string>
+    <string name="reg_25">除前款所述情形外，“货满车”平台同时保留在不事先通知用户的情况下随时中断或终止部分或全部网络服务的权利。对于所有因服务的中断或终止而造成的任何损失，“货满车”平台无需对用户或任何第三方承担任何责任。</string>
+
+    <string name="register">账号注册</string>
+    <string name="registerDirect">新用户直接注册</string>
+    <string name="searching">查找</string>
+    <string name="load_mode">加载更多</string>
+    <string name="pull_down_refresh">下拉刷新</string>
+    <string name="nextStep">下一步</string>
+    <string name="return_back">返回</string>
+    <string name="save">保存</string>
+    <string name="today">今天</string>
+    <string name="tomorrow">明天</string>
+    <string name="afterTomorrow">后天</string>
+    <string name="afterTwoday">大后天</string>
+    <string name="tip_conf_pass">请重新输入密码</string>
+    <string name="tip_pass">请输入密码6位数字以上</string>
+    <string name="tip_user">用户名或者手机号</string>
+    <string name="tip_phone">请输入手机号</string>
+    <string name="tip_idcard">请输入身份证号</string>
+    <string name="tip_name">请输入姓名</string>
+    <string name="tip_mess">请输入短信验证码</string>
+    <string name="tip_checkNum">请输入验证码</string>
+    <string name="tip_user_reg">4&#8211;16个字符，中文算两个</string>
+    <string name="tip_cname">请输入中文姓名</string>
+    <string name="tip_oldPass">请输入旧密码</string>
+    <string name="tip_newPass">请输入新密码</string>
+    <string name="tip_qq">请输入QQ号</string>
+    <string name="title_qq">QQ</string>
+    <string name="title_checkNumber">验证码</string>
+    <string name="title_conf_pass">确认密码</string>
+    <string name="title_idcard">身份证号</string>
+    <string name="title_cname">中文姓名</string>
+    <string name="title_password">密码</string>
+    <string name="title_oldPass">旧密码</string>
+    <string name="title_newPass">新密码</string>
+    <string name="title_username">用户名</string>
+    <string name="title_invite">邀请码</string>
+    <string name="tip_invite">输入邀请码或邀请人手机（可选）</string>
+    <string name="title_phone">手机号</string>
+    <string name="title_userType">用户类型</string>
+    <string name="title_addr_unloading">卸货地点</string>
+    <string name="title_addr_loading">装货地点</string>
+    <string name="title_time_publishes">发布时间</string>
+    <string name="title_company">公司名称</string>
+    <string name="title_contract">联系人</string>
+    <string name="title_time_loading">装货日期</string>
+    <string name="title_carLength">车长</string>
+    <string name="title_carWidth">车宽</string>
+    <string name="title_goodsType">包装类型</string>
+    <string name="title_goodsName">货物名称</string>
+    <string name="title_activity_login">用户登录</string>
+    <string name="title_activity_reset_pass">重置密码</string>
+    <string name="title_activity_message">消息</string>
+    <string name="title_originCity">出发城市</string>
+    <string name="title_arriveCity">到达城市</string>
+    <string name="update_password">修改密码</string>
+    <string name="focus_city">关注城市</string>
+    <string name="focus_company">关注公司</string>
+    <string name="my_focus">我的关注</string>
+    <string name="data_authentication">资料认证</string>
+    <string name="data_companyinfo">单位资料</string>
+    <string name="credit_card">银行卡</string>
+    <string name="personal_info">个人信息</string>
+    <string name="update">更新</string>
+    <string name="addorder">填写出货单</string>
+    <string name="contactsinfo">联系人信息</string>
+    <string name="pairedlist">订单列表</string>
+    <string name="settlement">未结算合同列表</string>
+    <string name="driver_for_address">司机列表</string>
+    <string name="add_arrived_driver">添加司机到达</string>
+    <string name="goods_info">货物信息</string>
+    <string name="inputText">点击输入</string>
+    <string name="company_name">单位名称</string>
+    <string name="company_alias">单位简称</string>
+    <string name="company_address">详细地址</string>
+    <string name="company_office_tel">固话</string>
+    <string name="company_fax">传真号码</string>
+    <string name="company_org_id">统一信用代码</string>
+    <string name="company_legaler">负责人</string>
+    <string name="company_legaler_tel">负责人电话</string>
+    <string name="company_decs">简介</string>
+    <string name="company_city">公司所在城市</string>
+
+
+    <string-array name="userType_s">
+        <item>司机</item>
+        <item>三方公司</item>
+    </string-array>
+
+    <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
+    <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label" translatable="false">加载中&#8230;</string>
+    <string name="pull_to_refresh_update_time_label" translatable="false">上次更新时间 </string>
+    <string name="pull_to_refresh_load_label" translatable="false">上拉加载更多</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_goods_search">查找货物</string>
+    <string name="title_activity_driver_focus_city">司机关注城市</string>
+    <string name="title_activity_dfocus_com">司机关注城市</string>
+    <string name="has_focus_city">已关注城市：</string>
+    <string name="has_focus_company">已关注公司：</string>
+    <string name="save_update">保存修改</string>
+    <string name="title_activity_driver_identify">资料认证</string>
+    <string name="upload_file">点击图片上传资料</string>
+    <string name="upload_check">请在本页上传你的照片，我们会对您上传的照片进行审核！</string>
+    <string name="select_identify">点击方框选择您的身份证照片</string>
+    <string name="select_personal">点击方框选择您的手持身份证照片</string>
+    <string name="select_driving">点击方框选择您的营业执照</string>
+    <string name="select_driver">点击方框选择您的办公门面照片</string>
+    <string name="select_logo">点击方框选择您公司的logo照片</string>
+    <string name="confirm_upload">确认上传</string>
+    <string name="no_pic">暂时没有图片信息</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_change_pass">修改密码</string>
+    <string name="title_activity_driver_inform">司机个人中心</string>
+    <string name="title_depart_city">出发城市</string>
+    <string name="title_hasgoods">是否载货</string>
+    <string name="title_arriveTime">到达时间</string>
+    <string name="tip_depart_city">点击选择出发城市</string>
+    <string name="tip_arrive_city">点击选择达到城市</string>
+    <string name="tip_hasgoods">点击选择是否载货</string>
+    <string name="tip_arriveTime">点击选择到达时间</string>
+    <string name="dialog_hasgood">请选择是否载货</string>
+    <string name="dialog_startAddr">请选择出发城市</string>
+    <string name="dialog_arrivedAddr">请选择目的城市</string>
+    <string name="dialog_date">请选择时间</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="confirm">确认</string>
+    <string name="cancle">取消</string>
+    <string name="goods">货物</string>
+    <string name="select_province">选择省份</string>
+    <string name="select_city">选择城市</string>
+    <string name="keyword">关键字</string>
+    <string name="date_picker_dialog_title">日期选择</string>
+    <string name="date_time_set">Set</string>
+    <string name="date_time_done">Done</string>
+    <string name="date_picker_increment_month_button">Increment month</string>
+    <string name="date_picker_decrement_month_button">Decrement month</string>
+    <string name="date_picker_increment_day_button">Increment day</string>
+    <string name="date_picker_decrement_day_button">Decrement day</string>
+    <string name="date_picker_increment_year_button">Increment year</string>
+    <string name="date_picker_decrement_year_button">Decrement year</string>
+    <string name="title_activity_company_list">公司列表</string>
+    <string name="title_activity_company_detail">公司资料</string>
+    <string name="title_companyName">公司名称</string>
+    <string name="title_companyLegal">公司法人</string>
+    <string name="title_companyPhone">联系电话</string>
+    <string name="title_companyTel">办公电话</string>
+    <string name="title_companyFax">传真号码</string>
+    <string name="title_companyAddr">公司地址</string>
+    <string name="title_companyIntroduce">公司简介</string>
+    <string name="title_activity_goods_list">公司货源</string>
+    <string name="more_message">消息</string>
+    <string name="more_addgoods">货物登记</string>
+    <string name="driver_log">司机管理中心，高效精细化的司机管理和查找，可以使您的工作添加倍增器，需日常滴积累！</string>
+    <string name="nav_arrive">我的已到达车辆</string>
+    <string name="nav_driver">我的车库</string>
+    <string name="nav_public_driver">公共车库</string>
+    <string name="nav_park">停车场车辆</string>
+    <string name="nav_new">新收录待处理</string>
+    <string name="nav_pause">已暂停</string>
+    <string name="nav_deleted">已删除</string>
+    <string name="nav_add">添加新司机</string>
+    <string name="title_activity_driver_list">司机列表</string>
+    <string name="title_activity_driver_search">司机</string>
+
+    <string name="split">~</string>
+    <string name="tip_length">车长</string>
+    <string name="tip_area">范围</string>
+    <string name="tip_width">车宽</string>
+    <string name="tip_select">过滤</string>
+
+    <string name="tip_target">目的地</string>
+    <string name="tip_car_type">车型</string>
+
+    <string name="pop_addArrived">添加已到达</string>
+    <string name="pop_recover">恢复</string>
+    <string name="pop_reuse">解除暂停</string>
+    <string name="pop_outTime">过期</string>
+    <string name="pop_focus_driver">谁有意向</string>
+    <string name="pop_focus_driver_detail">打开查看 打过电话的司机</string>
+    <string name="pop_cancle_detail">不进入统计数据</string>
+    <string name="pop_end_detail">有效记录 作为统计的一部分</string>
+    <string name="pop_link_detail">达成一致》司机接单》司机确认</string>
+    <string name="pop_call">拨号</string>
+    <string name="agreement_info">合同信息</string>
+
+    <string name="about_us">关于我们</string>
+    <string name="check_update">检查更新</string>
+    <string name="about_headtip">专注于车辆信息配货的物流平台</string>
+    <string name="about_content">近几年物流信息行业快速发展，由原来一个个信息孤岛，电话天天打，到一键发货，生意红红火火。\n\n
+再看今天，行业已变天，物流市场已被APP彻底改变，一家家信息部彻底离开行业，车辆的经营权也在悄悄改变，本来属于物流人的天，正被某些APP取而代之，由烧钱开拓的市场，迎来收割季节，这是必然的结果，是市场那个无形的手在发挥作用。
+        \n\n这时候我们静下来分析当前，透过迷雾看清事实，我们需要一个从行业用户生存出发，彻底解决未来发展空间。
+\n承诺只向物流行业用户开放
+\n承诺会员用户拥有公司经营100%否决权
+\n承诺提供300万维权基金
+\n承诺不通过大量䃼贴用户烧钱模式发展
+\n承诺通过公证处公证并公开以上承诺，不谨是公司规定，是公司面向用户的合同，受合同法管辖。
+
+\n\n我们有10年物流信息经营经验，我们有10年IT经营管理开发经验，从一般小商业软件，到大型跨国企业管理系统，相信我们一起能变天。
+
+\n\n现在所用户都被欺骗，被深深刺痛的内景下，我们已经有团结一致的基础，相信我们在用户的共同意志下，代表着用户共同利益为出发点，众志成城，一定能建立行业信心，真正做到，共同发展，而不是等着被宰割。
+\n\n经10年经营验证，我们能提供的不仅仅是发布信息、完成配货、配货结算、保险等一般功能，除了这些，我们更希望在经营管理上给帮助，助你提升，助您发展壮大。</string>
+    <string name="about_connect_head">联系我们：</string>
+    <string name="about_phone">020&#8211;</string>
+    <string name="about_tel">400&#8211;821&#8211;7756</string>
+    <string name="about_web">www.56hmc.com</string>
+    <string name="about_right">海南敏捷信息科技 版权所有</string>
+    <string name="about_code">&#169;&#032;2018&#032;琼ICP备18003379号-1</string>
+
+    <string name="title_add_driver">添加司机信息</string>
+    <string name="title_add_carInfo">添加车辆信息</string>
+    <string name="title_statistics">财务管理</string>
+
+    <string name="update_now">更&#032;&#032;新</string>
+    <string name="update_later">稍后提醒</string>
+    <string name="update_no">取消</string>
+
+    <string name="title_commission">提成金额确认</string>
+    <string name="title_orders">订单统计</string>
+    <string name="title_money">金额</string>
+    <string name="titlle_calls">电话统计</string>
+    <string name="title_netcalls">网络电话统计</string>
+    <string name="title_author">对员工临时授权</string>
+    <string name="title_activity_relogin">重新登录</string>
+    <string name="account_recharge">会员充值</string>
+    <string name="title_push_sale">推广成果</string>
+    <string name="title_rechange">请选择充值套餐</string>
+    <string name="save_rechange">确认充值</string>
+    <string name="title_activity_driver_rechange">会员充值</string>
+
+
+    <string name="shipClose">关闭（请选择订单的另一部分）</string>
+    <string name="shipConfign">订单确认</string>
+    <string name="shipCancel">取消订单</string>
+    <string name="shipTip_1">未选择司机 请选择司机</string>
+    <string name="shipDetail">订单详情</string>
+    <string name="order">订单</string>
+
+
+    <!--推广成果界面-->
+    <string name="promotion_results">推广成果</string>
+    <string name="promot_customers">推广客户</string>
+    <string name="promot_money">推广金额</string>
+    <string name="promot_time">推广时间</string>
+    <string name="promot_company">推广客户公司</string>
+    <string name="promot_citys">动态获取客户的省市</string>
+    <string name="promot_tel">电话</string>
+    <string name="diver">司机</string>
+    <string name="promot_name">姓名</string>
+    <string name="shipper">货主</string>
+    <string name="promot_status_true">已审核</string>
+    <string name="promot_status_false">未审核</string>
+    <string name="promot_fragment_one">用户列表</string>
+    <string name="promot_fragment_two">提成明细</string>
+    <string name="promot_close_window">关闭窗口</string>
+    <string name="promot_remove_flag">清除√</string>
+    <string name="promot_check_all">全选</string>
+    <string name="promot_tips_recharge">通知充值</string>
+
+
+    <string name="camera">拍照</string>
+    <string name="photo">图库</string>
+    <string name="real_time_operation">实时操作</string>
+    <string name="freight_prepaid">预付运费</string>
+    <string name="unit">单位为米</string>
+    <string name="maxword">最多四个字</string>
+    <string name="addgood">添加货物</string>
+    <string name="found">查找</string>
+    <string name="message">消息</string>
+    <string name="record">充值记录</string>
+    <string name="promotion_explain">&#12288;&#12288;1.扫描此二维码。2.按右上角“分享”进行推广。\n\n谢谢您为平台做的贡献，请您协助用户，用微信扫此二维码，扫描之后，请用户关注货满车公众号，进入注册界面，注册完成后，提示其按软件指示进行下载，使用新注册的用户进行登录，并完成资料填写和身份认证和充值！你也可以在APP“推广成果”看到结果。</string>
+    <string name="mycard">我的银行卡</string>
+    <string name="wx_binding">微信绑定</string>
+
+
+    <string name="binding_referrer">推荐人</string>
+</resources>

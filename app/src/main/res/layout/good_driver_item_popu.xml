@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela_popu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/popu_blue_style"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <RelativeLayout
+            android:id="@+id/line_addArrived"
+            style="@style/popRelative"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_addArrived"
+                style="@style/popRelativeImg"
+                android:contentDescription="@string/apk_name"
+                android:src="@drawable/add_driver" />
+
+            <TextView
+                android:id="@+id/txt_addArrived"
+                style="@style/popRelativeTxt"
+                android:layout_toRightOf="@+id/img_addArrived"
+                android:text="@string/pop_addArrived" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/light_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_outTime"
+            style="@style/popRelative"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_outTime"
+                style="@style/popRelativeImg"
+                android:contentDescription="@string/apk_name"
+                android:src="@drawable/traffic_forbidden" />
+
+            <TextView
+                android:id="@+id/txt_outTime"
+                style="@style/popRelativeTxt"
+                android:layout_toRightOf="@+id/img_outTime"
+                android:text="@string/pop_outTime" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/light_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_view_call"
+            style="@style/popRelative">
+
+            <ImageView
+                android:id="@+id/img_view"
+                style="@style/popRelativeImg"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:contentDescription="@string/apk_name"
+                android:src="@drawable/ic_dir_choose" />
+
+            <TextView
+                android:id="@+id/txt_view_call"
+                style="@style/popTxt"
+                android:layout_toRightOf="@+id/img_view"
+                android:text="@string/pop_focus_driver" />
+
+            <TextView
+                style="@style/popRelativeTxt"
+                android:layout_toRightOf="@+id/txt_view_call"
+                android:text="@string/pop_focus_driver_detail" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_error"
+            style="@style/popRelative">
+
+            <ImageView
+                android:id="@+id/img_error"
+                style="@style/popRelativeImg"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:contentDescription="@string/apk_name"
+                android:src="@drawable/error" />
+
+            <TextView
+                android:id="@+id/txt_error"
+                style="@style/popTxt"
+                android:layout_toRightOf="@+id/img_error"
+                android:text="作&#12288;废&#12288; " />
+
+            <TextView
+                style="@style/popRelativeTxt"
+                android:layout_toRightOf="@+id/txt_error"
+                android:text="@string/pop_cancle_detail" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_end"
+            style="@style/popRelative">
+
+            <ImageView
+                android:id="@+id/img_end"
+                style="@style/popRelativeImg"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:contentDescription="@string/apk_name"
+                android:src="@drawable/end" />
+
+            <TextView
+                android:id="@+id/txt_end"
+                style="@style/popTxt"
+                android:layout_toRightOf="@+id/img_end"
+                android:text="结&#12288;束&#12288;" />
+
+            <TextView
+                style="@style/popRelativeTxt"
+                android:layout_toRightOf="@+id/txt_end"
+                android:text="@string/pop_end_detail" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_link"
+            style="@style/popRelative">
+
+            <ImageView
+                android:id="@+id/img_link"
+                style="@style/popRelativeImg"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/apk_name"
+                android:src="@drawable/link_samll" />
+
+            <TextView
+                android:id="@+id/txt_link"
+                style="@style/popTxt"
+                android:layout_toRightOf="@+id/img_link"
+                android:text="关&#12288;联&#12288;" />
+
+            <TextView
+                style="@style/popRelativeTxt"
+                android:layout_toRightOf="@+id/txt_link"
+                android:text="@string/pop_link_detail" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_connect"
+            style="@style/popRelative"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_connect"
+                style="@style/popRelativeImg"
+                android:contentDescription="@string/apk_name"
+                android:src="@drawable/phone_call" />
+
+            <TextView
+                style="@style/popRelativeTxt"
+                android:layout_toRightOf="@+id/img_connect"
+                android:text="@string/pop_call" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

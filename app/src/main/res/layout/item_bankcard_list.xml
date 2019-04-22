@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_bank"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+           >
+
+            <ImageView
+                android:id="@+id/img_bank_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mybank_ny"
+                android:scaleType="fitXY"
+                />
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_bankcard"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:contentDescription="@string/apk_name"
+                android:scaleType="centerCrop"
+                android:src="@color/multiple_image_select_divider"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/text_bankname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_bankcard"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@+id/img_bankcard"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="建设银行" />
+
+
+            <TextView
+                android:id="@+id/text_banktype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_bankcard"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/img_bankcard"
+                android:text="储蓄卡"
+                android:textColor="#66ffffff" />
+
+            <TextView
+                android:id="@+id/text_banknum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_bankcard"
+                android:layout_below="@+id/text_banktype"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18"
+                android:text="**** **** **** 4518" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

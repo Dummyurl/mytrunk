@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a1000000"
+    tools:context=".activity.CitySelectActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="出发地"
+                android:textColor="#333"/>
+
+            <ImageButton
+                android:id="@+id/close"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:src="@drawable/layer_ico_close"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近选择"
+                android:layout_marginBottom="6dp"
+                android:textColor="#333"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/candidate0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#F2F6F9"
+                android:padding="6dp"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="#333"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/candidate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:background="#F2F6F9"
+                android:padding="6dp"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="#333"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/candidate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:background="#F2F6F9"
+                android:padding="6dp"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="#333"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <RadioButton
+                android:id="@+id/radio_one"
+                android:layout_width="0px"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/radio_select_tab"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="省"
+                android:textColor="@drawable/radio_select_text_color"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_two"
+                android:layout_width="0px"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_select_tab"
+                android:button="@null"
+                android:gravity="center"
+                android:text="市"
+                android:textColor="@drawable/radio_select_text_color"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_three"
+                android:layout_width="0px"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/radio_select_tab"
+                android:button="@null"
+                android:gravity="center"
+                android:text="区"
+                android:textColor="@drawable/radio_select_text_color"
+                android:textSize="14sp"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#39A6F9"></View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

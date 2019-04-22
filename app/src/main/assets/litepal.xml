@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="trunk" ></dbname>
+    <!--增加了表：app本地数据库，需要增加此值 +1 -->
+    <version value="11" ></version>
+
+    <list>
+        <mapping class="com.car.portal.XmlHandlers.CitiesModel"></mapping>
+        <mapping class="com.car.portal.XmlHandlers.ProvinceModel"></mapping>
+        <mapping class="com.car.portal.XmlHandlers.DistrictModel"></mapping>
+
+        <mapping class="com.car.portal.entity.Company"></mapping>
+
+        <mapping class="com.car.portal.entity.Historyquerylinkman"></mapping>
+    </list>
+</litepal>
+

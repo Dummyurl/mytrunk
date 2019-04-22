@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/img_found_return"
+            android:src="@drawable/btn_return"
+            android:layout_width="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_height="@dimen/dp_25" />
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:text="单位资料"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_body_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/loginEditText"
+                android:text="@string/company_name" />
+
+            <EditText
+                android:id="@+id/company_info_name"
+                android:background="@drawable/edittext_login"
+                android:singleLine="true"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textColor="@color/darkgray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/loginEditText"
+                android:text="@string/company_alias" />
+
+            <EditText
+                android:id="@+id/company_info_alias"
+                android:background="@drawable/edittext_login"
+                android:singleLine="true"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:maxLength="6"
+                android:hint="限6个字以内"
+                android:textColor="@color/darkgray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/loginEditText"
+                android:text="@string/company_city" />
+
+            <TextView
+                android:id="@+id/company_info_city"
+                android:background="@drawable/edittext_login"
+                android:singleLine="true"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textColor="@color/darkgray"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/loginEditText"
+                android:text="@string/company_address" />
+
+            <EditText
+                android:id="@+id/company_info_address"
+                android:background="@drawable/edittext_login"
+                android:singleLine="true"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textColor="@color/darkgray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/loginEditText"
+                android:text="@string/company_office_tel" />
+
+            <EditText
+                android:id="@+id/company_info_officetel"
+                android:background="@drawable/edittext_login"
+                android:singleLine="true"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="44dp"
+                android:textColor="@color/darkgray">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/loginEditText"
+                android:text="@string/company_fax" />
+
+            <EditText
+                android:id="@+id/company_info_fax"
+                android:background="@drawable/edittext_login"
+                android:singleLine="true"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:inputType="number"
+                android:textColor="@color/darkgray"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="@dimen/dp_5"
+                android:text="@string/company_org_id"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/company_info_orgid"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/edittext_login"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/darkgray"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/loginEditText"
+                android:text="@string/company_legaler" />
+
+            <EditText
+                android:id="@+id/company_info_legaler"
+                android:background="@drawable/edittext_login"
+                android:singleLine="true"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textColor="@color/darkgray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/loginEditText"
+                android:text="@string/company_legaler_tel" />
+
+            <EditText
+                android:id="@+id/company_info_legalertel"
+                android:background="@drawable/edittext_login"
+                android:singleLine="true"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:maxLength="11"
+                android:layout_height="44dp"
+                android:textColor="@color/darkgray"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/loginEditText"
+                android:text="@string/company_decs" />
+            <EditText
+                android:id="@+id/company_info_decs"
+                android:background="@drawable/edittext_login"
+                android:singleLine="true"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textColor="@color/darkgray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/driver_upload_text"
+                android:text="@string/select_logo" />
+
+            <ImageView
+                android:id="@+id/company_info_logo"
+                style="@style/driver_uploadImg"
+                android:contentDescription="@string/apk_name" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/company_info_update"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_register_bg"
+            android:text="@string/update"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

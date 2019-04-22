@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5BC0DE</color>
+    <color name="colorPrimaryDark">#5BC0DE</color>
+    <color name="colorAcceet">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="textcolor">#353535</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="light_blue">#6666FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="gray">#999999</color>
+    <color name="light_gray">#DDDDDD</color>
+    <color name="light_gray_bg">#E9E9E9</color>
+    <color name="title_black">#333333</color>
+    <color name="green">#00DD00</color>
+    <color name="light_red">#FF3030</color>
+    <color name="darkgray">#666666</color>
+    <color name="littleGray">#f4f4f4</color>
+    <color name="backgroud_blue">#E2EFEF</color>
+    <color name="txt_blue">#2B497B</color>
+    <color name="view_blue">#5BC0DE</color>
+    <color name="trasblack">#66000000</color>
+    <color name="uncheck_green">#5CB85C</color>
+    <color name="check_green">#388138</color>
+    <color name="qq_blue">#169ADA</color>
+    <color name="gray_est">#F7F7F7</color>
+    <color name="blue1">#B0DDF6</color>
+    <color name="blue2">#88C1E6</color>
+    <color name="colorGray_e">#eeeeee</color>
+    <color name="colorGray_5">#555555</color>
+    <color name="colorLine">#bfbfbf</color>
+    <color name="back">#ededed</color>
+    <color name="colorGray_g">#f5f5f5</color>>
+    <color name="blue4">#6897c9</color>
+    <!-- 消息流listview下拉刷新的header上的四个颜色值 -->
+    <color name="umeng_comm_lv_header_color1">#33b5e5</color>
+    <color name="umeng_comm_lv_header_color2">#ff4444</color>
+    <color name="umeng_comm_lv_header_color3">#99cc00</color>
+    <color name="umeng_comm_lv_header_color4">#ffbb33</color>
+    <color name="blue3">#187ebe</color>
+    <color name="pick_selection_divider">#31B0D5</color>
+    <color name="dialog_diliver">#1c96e2</color>
+    <color name="gray2">#757575</color>
+    <color name="bg_floder_press">#bdbdbd</color>
+    <color name="cadet_blue">#ADB4BE</color>
+    <color name="no_select_bg_color">#F4F4F4</color>
+    <color name="line_Dense_grey">#a9a39a9a</color>
+</resources>

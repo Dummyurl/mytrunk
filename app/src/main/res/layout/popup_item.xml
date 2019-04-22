@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/popRelative" >
+
+    <ImageView
+        android:id="@+id/pop_item_img"
+        style="@style/popRelativeImg"
+        android:contentDescription="@string/apk_name"
+        android:src="@drawable/play" />
+
+    <TextView
+        android:id="@+id/pop_item_text"
+        style="@style/popRelativeTxt"
+        android:layout_toRightOf="@+id/pop_item_img"
+        android:text="@string/pop_reuse" />
+
+    <View
+        android:id="@+id/pop_item_diliver"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gray" />
+
+</RelativeLayout>

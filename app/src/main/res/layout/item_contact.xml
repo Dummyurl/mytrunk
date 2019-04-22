@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/parent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/stroke_bottom_only"
+              android:gravity="left|center"
+              android:orientation="horizontal"
+              android:padding="14dp">
+
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_img"
+            app:riv_oval="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/title_black"
+                    android:text="小明"/>
+
+                <RatingBar
+                    style="@style/RadingStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/rating_bar"
+                    android:numStars="3"
+                    android:rating="5"
+
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/dp_2"
+                android:id="@+id/detail"
+                android:text="粤B5Q300 17.5米 平板"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:textColor="@color/gray"
+                android:text="晚上08:50"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/littleGray"></View>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp_10"
+        android:id="@+id/call"
+        android:drawableLeft="@drawable/phone_call"
+        android:text="联系司机"
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp_10"
+        android:id="@+id/local"
+        android:drawableLeft="@drawable/location_add"
+        android:text="车辆定位"
+        />
+
+</LinearLayout>
+
+</LinearLayout>
+

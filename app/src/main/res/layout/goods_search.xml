@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.car.portal.view.BaseTitleView 
+        android:id="@+id/goodsSearchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/activity_body_padding"
+        android:paddingRight="@dimen/activity_body_padding" >
+
+        <TextView
+            android:id="@+id/goods_search_src"
+            style="@style/loginEditStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:hint="@string/tip_depart_city"
+            android:maxLength="16" />
+
+        <TextView
+            style="@style/loginEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/title_originCity" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/activity_body_padding"
+        android:paddingRight="@dimen/activity_body_padding" >
+
+        <TextView
+            android:id="@+id/goods_search_arrive"
+            style="@style/loginEditStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:hint="@string/tip_arrive_city"
+            android:maxLength="16" />
+
+        <TextView
+            style="@style/loginEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/title_arriveCity" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_body_padding"
+        android:paddingRight="@dimen/activity_body_padding" >
+
+        <TextView
+            style="@style/loginEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_arriveCity" />
+
+        <RadioGroup
+            android:id="@+id/goods_Radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/goods_today"
+                style="@style/radioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/today"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/goods_tomorrow"
+                style="@style/radioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tomorrow" />
+
+            <RadioButton
+                android:id="@+id/goods_afterTomorrow"
+                style="@style/radioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/afterTomorrow" />
+
+            <RadioButton
+                android:id="@+id/goods_afterTwoDay"
+                style="@style/radioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/afterTwoday" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goods_search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_body_padding"
+        android:layout_marginLeft="@dimen/activity_body_padding"
+        android:layout_marginRight="@dimen/activity_body_padding"
+        android:layout_marginStart="@dimen/activity_body_padding"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_register_bg"
+        android:height="44dp"
+        android:text="@string/searching"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

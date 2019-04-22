@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="350dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/group_contacts" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/user_check" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/wx_accredit" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/imageView4"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/information" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/textcolor"
+            android:text="个人头像完善" />
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/textcolor"
+            android:text="公司资料完善" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView4"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/textcolor"
+            android:text="单位资料完善" />
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignTop="@+id/imageView5"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView5"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/textcolor"
+            android:text="个人资料完善" />
+
+
+        <ImageView
+            android:id="@+id/driver_head_img"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/textView6"
+             />
+
+        <ImageView
+            android:id="@+id/driver_check_img"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/textView7"
+            />
+
+        <ImageView
+            android:id="@+id/company_info_img"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/textView8"
+           />
+
+
+        <ImageView
+            android:id="@+id/driver_info_img"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/textView9"
+            />
+        <Button
+            android:id="@+id/closs_btn"
+            android:background="@drawable/blue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="@dimen/dp_25"
+            android:textColor="@color/white"
+            android:text="关闭" />
+    </RelativeLayout>
+
+</LinearLayout>

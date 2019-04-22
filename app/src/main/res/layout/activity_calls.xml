@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.car.portal.activity.CallsActivity">
+    <com.car.portal.view.BaseTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/base_title_view"/>
+    <TextView
+        android:id="@+id/txt_no_one_warn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未查找到相关数据"
+        android:background="@color/light_gray"
+        android:lineSpacingExtra="@dimen/dp_3"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/darkgray"
+        android:layout_below="@+id/base_title_view"
+        android:visibility="gone"/>
+
+    <com.car.portal.view.CallsHeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/calls_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/gray"
+        android:dividerHeight="1px"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true" >
+    </ListView>
+
+</LinearLayout>

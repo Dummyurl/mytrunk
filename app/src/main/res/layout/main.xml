@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tabAttr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_container"
+    android:orientation="vertical">
+
+    <!--<com.car.portal.view.HomeTitleView-->
+        <!--android:id="@+id/main_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/mytooler"/>
+
+        <LinearLayout
+            tabAttr:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/homepager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_est"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <com.car.portal.view.TabItemView
+            android:id="@+id/pager_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tabAttr:srcImage="@drawable/chat" />
+
+        <com.car.portal.view.TabItemView
+            android:id="@+id/pager_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tabAttr:srcImage="@drawable/person_list" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/deliver_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:paddingTop="@dimen/dp_5"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/delivery" />
+
+                <TextView
+                    android:id="@+id/tab_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliver_img"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="7dp"
+                    android:text="发货"
+                    android:textColor="@color/gray"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.car.portal.view.TabItemView
+            android:id="@+id/pager_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tabAttr:srcImage="@drawable/find" />
+
+        <com.car.portal.view.TabItemView
+            android:id="@+id/pager_person"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            tabAttr:srcImage="@drawable/personal" />
+    </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

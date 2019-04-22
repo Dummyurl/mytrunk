@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_Dense_grey"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/procommiss_bottom_window"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/add_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/promot_check_all"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_Dense_grey" />
+
+            <TextView
+                android:id="@+id/close_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/promot_remove_flag"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_Dense_grey" />
+
+            <TextView
+                android:id="@+id/notice_recharge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/promot_tips_recharge"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_Dense_grey" />
+
+            <LinearLayout
+                android:id="@+id/close_windows"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/layer_ico_close"
+                    android:gravity="center"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/edit_text"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_alignParentRight="true"
+    android:gravity="center"
+    android:layout_marginRight="@dimen/dp_10"
+    >
+    <ImageView
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:src="@drawable/add"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/real_time_operation"
+            android:textColor="@color/white" />
+</LinearLayout>
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/procommiss_smalayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srlAccentColor="@color/qq_blue"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlPrimaryColor="@color/backgroud_blue">
+        <!--<com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/procommiss_rl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <!--<com.scwang.smartrefresh.layout.footer.ClassicsFooter-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <!--无数据窗口-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/Null_Message_Tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Procom_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/blue_button"
+            android:text="充值合计:0"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/activity_body_padding"
+            android:layout_marginRight="@dimen/activity_body_padding"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

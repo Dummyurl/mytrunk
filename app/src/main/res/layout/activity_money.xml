@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.car.portal.activity.MoneyActivity">
+    <com.car.portal.view.BaseTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/base_title_view"/>
+
+    <TextView
+        android:id="@+id/txt_no_one_warn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未查找到相关数据"
+        android:background="@color/light_gray"
+        android:lineSpacingExtra="@dimen/dp_3"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/darkgray"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/list_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/light_gray"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="1dp"/>
+    
+    <ListView
+        android:id="@+id/list_allMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/light_gray"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"/>
+    
+</LinearLayout>

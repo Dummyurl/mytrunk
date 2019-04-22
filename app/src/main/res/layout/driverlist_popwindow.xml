@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela_popu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/trasblack"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_context"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popu_style"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10" >
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

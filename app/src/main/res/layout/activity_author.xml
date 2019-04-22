@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.car.portal.activity.AuthorActivity">
+    <include layout="@layout/mytooler"></include>
+    <ListView
+        android:id="@+id/list_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/base_title_view"
+        android:divider="@color/white"
+        android:dividerHeight="0dp"></ListView>
+
+</LinearLayout>

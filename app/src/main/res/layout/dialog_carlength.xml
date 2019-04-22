@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="460dp"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,HardcodedText">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用车类型"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_5"/>
+                <!-- 车长类型 -->
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_5"
+                    android:id="@+id/userCarType"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/useCarType1"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/tv_sel"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="整车"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_17"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/useCarType2"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/tv_sel"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="零担"
+                        android:textSize="@dimen/sp_17"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+            <!--车长-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车长类型(米,可多选)"
+                android:textSize="@dimen/dp_15"
+                android:textColor="#000000"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+
+                />
+
+            <com.car.portal.view.MyRadioGroup
+                android:id="@+id/clType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_8">
+
+
+                <CheckBox
+                    android:hint="1"
+                    android:id="@+id/clType1"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="1.8"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                  />
+
+                <CheckBox
+                    android:hint="2"
+                    android:id="@+id/clType2"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="4.2"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="5dp"
+                    />
+                <CheckBox
+                    android:hint="3"
+                    android:id="@+id/clType3"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="5dp"
+                    />
+                <CheckBox
+                    android:hint="4"
+                    android:id="@+id/clType4"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="6.8"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="5dp"
+                    android:paddingBottom="@dimen/dp_5"
+                    />
+
+
+                <CheckBox
+                    android:hint="5"
+                    android:id="@+id/clType5"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="7.7"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:textSize="@dimen/sp_17"
+                   />
+
+                <CheckBox
+                    android:hint="6"
+                    android:id="@+id/clType6"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="8.2"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="5dp"
+                    />
+                <CheckBox
+                    android:hint="7"
+                    android:id="@+id/clType7"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="9.6"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="5dp"
+                    />
+                <CheckBox
+                    android:hint="8"
+                    android:id="@+id/clType8"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="11.7"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="5dp"
+                    />
+                <CheckBox
+                    android:hint="9"
+                    android:id="@+id/clType9"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="13"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:textSize="@dimen/sp_17"
+                    />
+                <CheckBox
+                    android:hint="10"
+                    android:id="@+id/clType10"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="13.5"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="5dp"
+                    />
+                <CheckBox
+                    android:hint="11"
+                    android:id="@+id/clType11"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="17.5"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="5dp"
+                    />
+                <CheckBox
+                    android:hint="12"
+                    android:id="@+id/clType12"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="18"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </com.car.portal.view.MyRadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_3"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/dp_5">
+                <!--运费金额-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/dp_5"
+                    android:text="其他车长:"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/editText_carLength"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="点击输入"
+                    android:inputType="number|numberDecimal"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:textColorHint="#000000"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+
+            <!--车型-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车型(可多选)"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:textSize="@dimen/dp_15"
+                android:textColor="#000000"
+                />
+
+            <!-- 车型 -->
+            <com.car.portal.view.MyRadioGroup
+                android:id="@+id/carType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                >
+
+                <CheckBox
+                    android:hint="1"
+                    android:id="@+id/carType1"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="高低板"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="5dp" />
+
+                <CheckBox
+                    android:hint="2"
+                    android:id="@+id/carType2"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="高栏"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="5dp" />
+
+                <CheckBox
+                    android:hint="3"
+                    android:id="@+id/carType3"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="冷藏货柜"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:textSize="@dimen/sp_17"
+                    />
+
+                <CheckBox
+                    android:hint="4"
+                    android:id="@+id/carType4"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="平板"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="5dp" />
+
+
+                <CheckBox
+                    android:hint="5"
+                    android:id="@+id/carType5"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="高低高"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    />
+
+                <CheckBox
+                    android:hint="6"
+                    android:id="@+id/carType6"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="货柜"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    />
+
+                <CheckBox
+                    android:hint="7"
+                    android:id="@+id/carType7"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="超低板"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+
+                    />
+
+                <CheckBox
+                    android:hint="8"
+                    android:id="@+id/carType8"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="自卸车"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    />
+
+                <CheckBox
+                    android:hint="9"
+                    android:id="@+id/carType9"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="高栏平板"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_17"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    />
+
+                <CheckBox
+                    android:hint="10"
+                    android:id="@+id/carType10"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/tv_sel"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="高栏高低板"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_15"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    />
+
+            </com.car.portal.view.MyRadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/choose_carType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:layout_marginLeft="@dimen/sp_16"
+            android:layout_marginRight="@dimen/sp_16"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:background="@drawable/blue_button"
+            android:textColor="@color/white"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

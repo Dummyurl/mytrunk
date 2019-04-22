@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:minWidth="65dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/order_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_gray_bg"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/order_first"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_second"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_third"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_forth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_sixth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_seventh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_eighth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_ninth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_tenth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_eleventh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/order_twelfth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_cell"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

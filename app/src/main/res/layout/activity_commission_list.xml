@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+   android:background="@color/light_gray_bg">
+   <com.car.portal.view.BaseTitleView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/base_title_view"/>
+
+    <TextView
+        android:id="@+id/txt_no_one_warn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未查找到相关数据"
+        android:background="@color/view_blue"
+        android:lineSpacingExtra="@dimen/dp_3"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/darkgray"
+        android:layout_below="@+id/base_title_view"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/commission_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/white"
+        android:background="@color/light_gray_bg"
+        android:layout_below="@+id/base_title_view"/>
+
+</RelativeLayout>

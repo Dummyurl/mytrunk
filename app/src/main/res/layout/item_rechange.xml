@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/stroke_bottom_only"
+    >
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/pic_01"/>
+
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/money"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textSize="18sp"
+                    android:textColor="#333333"
+                    android:text="10"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/type"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="2dp"
+                    android:text="元/3个月"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail"
+                android:textColor="#525252"
+                android:textSize="14sp"
+                android:text="3个月试用期半年会员费"/>
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/state"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center|left"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/chekbox_style0"
+            android:textColor="#333333"
+            android:textSize="19sp"
+            />
+
+
+
+    </LinearLayout>
+

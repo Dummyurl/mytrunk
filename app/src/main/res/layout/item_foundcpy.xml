@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Rel_found_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_5"
+        android:id="@+id/txt_found_cpyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="@dimen/sp_16"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txt_found_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_found_cpyname"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:text="TextView"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:id="@+id/cbox_found_ischeck"
+        android:visibility="gone"
+        android:src="@drawable/ischeck"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp" />
+</RelativeLayout>

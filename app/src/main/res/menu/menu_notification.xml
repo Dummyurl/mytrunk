@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/all_message"
+        app:showAsAction="collapseActionView"
+        android:title="全部通知"
+        android:icon="@drawable/allmessage"/>
+
+
+    <item
+        android:id="@+id/good_message"
+        app:showAsAction="collapseActionView"
+        android:title="货物信息"
+        android:icon="@drawable/good_message"/>
+
+    <!--<item android:id="@+id/search"-->
+    <!--app:showAsAction="ifRoom"-->
+    <!--android:title="@string/found"-->
+    <!--android:icon="@drawable/ic_search"/>-->
+
+    <item
+        android:id="@+id/transaction_message"
+        app:showAsAction="collapseActionView"
+        android:title="交易通知"
+        android:icon="@drawable/transaction_message"/>
+
+    <item
+        android:id="@+id/sett_message"
+        app:showAsAction="collapseActionView"
+        android:title="营销活动"
+        android:icon="@drawable/sett_message"/>
+
+
+    <item
+        android:id="@+id/marketing_message"
+        app:showAsAction="collapseActionView"
+        android:title="平台通知"
+        android:icon="@drawable/marketing_message"/>
+</menu>

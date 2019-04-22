@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:driverNav="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray_g"
+    android:orientation="vertical"
+    tools:context="com.car.portal.fragment.DriverInfoFragment" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/blue1"
+        />
+
+    <TextView
+        android:id="@+id/tixing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/blue1"
+        android:lineSpacingExtra="@dimen/dp_3"
+        android:padding="@dimen/dp_20"
+        android:textColor="@color/darkgray"
+        android:text="@string/driver_log" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+    <LinearLayout
+        android:id="@+id/online_driver"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/click_bg1"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/onlinecar" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="在线车辆"
+            android:textColor="@color/colorGray_5"
+            android:textSize="14sp" />
+        <LinearLayout
+            android:id="@+id/line_map"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击进入在线地图"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_map" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorGray_g" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+    <LinearLayout
+        android:id="@+id/info_arrive"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/click_bg1"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="我的已到达车辆"
+            android:textColor="@color/colorGray_5"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/ic_right" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorGray_g" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+    <LinearLayout
+        android:id="@+id/info_driver"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/click_bg1"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/driver_list" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="我的车库"
+            android:textColor="@color/colorGray_5"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/ic_right" />
+
+    </LinearLayout>
+
+    <!--<com.car.portal.view.DriverNavView-->
+        <!--android:id="@+id/info_arrive"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_marginTop="@dimen/dp_20"-->
+        <!--driverNav:contentText="@string/nav_arrive"-->
+        <!--driverNav:imgRes="@drawable/location" />-->
+
+    <!--公共车库-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorGray_g" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:id="@+id/info_public_driver"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/click_bg1"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/deiver_more" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="公共车库"
+            android:textColor="@color/colorGray_5"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/ic_right" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorGray_g" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+
+
+
+    <LinearLayout
+        android:id="@+id/info_park"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/click_bg1"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/parking" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/nav_park"
+            android:textColor="@color/colorGray_5"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/ic_right" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorGray_g" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+
+
+    <LinearLayout
+        android:id="@+id/info_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/click_bg1"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/add_driver" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/nav_add"
+            android:textColor="@color/colorGray_5"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/ic_right" />
+
+    </LinearLayout>
+
+
+
+    <com.car.portal.view.DriverNavView
+        android:id="@+id/info_new"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:visibility="gone"
+        driverNav:contentText="@string/nav_new"
+        driverNav:imgRes="@drawable/driver_note" />
+
+    <com.car.portal.view.DriverNavView
+        android:id="@+id/info_pause"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:visibility="gone"
+        driverNav:contentText="@string/nav_pause"
+        driverNav:imgRes="@drawable/pause" />
+
+    <com.car.portal.view.DriverNavView
+        android:id="@+id/info_delete"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:visibility="gone"
+        driverNav:contentText="@string/nav_deleted"
+        driverNav:imgRes="@drawable/trash" />
+
+    <!--<com.car.portal.view.DriverNavView-->
+        <!--android:id="@+id/info_add"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--driverNav:contentText="@string/nav_add"-->
+        <!--driverNav:imgRes="@drawable/add_driver" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+
+</LinearLayout>

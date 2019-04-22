@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e0000000"
+    android:gravity="right"
+    android:id="@+id/line_popu_more">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_3"
+        android:layout_margin="@dimen/dp_3"
+        android:background="@drawable/border_focus_green">
+        <LinearLayout
+            android:id="@+id/line_message"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/chat"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_message"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_body_padding"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"/>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/line_addgoodsinfo"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="5dp"-->
+            <!--android:background="@color/white">-->
+            <!--<ImageView-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/more_addgoods"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/more_addgoods"-->
+                <!--android:textSize="@dimen/activity_body_padding"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:layout_marginLeft="10dp"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

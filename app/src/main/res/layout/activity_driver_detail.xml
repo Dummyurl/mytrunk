@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/driver_detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/trasblack"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/popu_style"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/detail_driverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:padding="@dimen/dp_5"
+            android:text="张司机"
+            android:textColor="@color/blue3"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detail_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/detail_driverName"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/detail_driverName"
+            android:padding="@dimen/dp_5"
+            android:text="粤A5555"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/deliver"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/detail_driverName"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/detail_length_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deliver"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:scaleType="centerInside"
+                android:src="@drawable/detail_length"/>
+
+            <TextView
+                android:id="@+id/carLengthDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="车长："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_18"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_weight_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_length_lay"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:scaleType="centerInside"
+                android:src="@drawable/detail_loading"/>
+
+            <TextView
+                android:id="@+id/carLoadingDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="装载："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_18"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_aspect_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_weight_lay"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:scaleType="centerInside"
+                android:src="@drawable/detail_aspect"/>
+
+            <TextView
+                android:id="@+id/startPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="出发点："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_18"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_route_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_aspect_lay"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:scaleType="centerInside"
+                android:src="@drawable/detail_route"/>
+
+            <TextView
+                android:id="@+id/endPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="目的地："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_18"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
